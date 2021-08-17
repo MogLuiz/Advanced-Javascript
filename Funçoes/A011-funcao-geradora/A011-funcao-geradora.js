@@ -59,3 +59,25 @@ const g4 = geradora4()
 for (let valor of g4) {
     console.log(valor)
 }
+
+
+// Gerador com funções
+
+function* geradora5() {
+    yield function() {
+        console.log('Vim do y1')
+    }
+
+    return // O return termina a função
+
+    yield function() {
+        console.log('Vim do y2')
+    }
+}
+
+const g5 = geradora5()
+const func1 = g5.next().value
+const func2 = g5.next().value
+
+func1()
+func2()
