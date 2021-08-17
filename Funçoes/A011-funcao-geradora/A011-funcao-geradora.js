@@ -21,6 +21,7 @@ for (let valor of g1) {
     console.log(valor)
 }
 
+// Gerador infinito
 function* geradora2() {
     let i = 0
 
@@ -36,3 +37,25 @@ console.log(g2.next().value)
 console.log(g2.next().value)
 console.log(g2.next().value)
 console.log(g2.next().value)
+
+
+// Gerador que delega tarefa pra outro gerador
+
+function* geradora3() {
+    yield 0
+    yield 1
+    yield 2
+}
+
+function* geradora4() {
+    yield* geradora3() // Delegando o 0, 1 e 2 pra geradora 3. 
+
+    yield 3
+    yield 4 // Executando a 3, 4 e 5 na geradora 4
+    yield 5
+}
+
+const g4 = geradora4()
+for (let valor of g4) {
+    console.log(valor)
+}
