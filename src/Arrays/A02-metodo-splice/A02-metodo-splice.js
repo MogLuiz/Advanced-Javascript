@@ -34,3 +34,12 @@ const nomes3 = ['Maria', 'Jõao', 'Eduardo', 'Gabriel', 'Júlia']
 nomes3.splice(nomes3.length, 0, 'Luiz')
 
 console.log(nomes3)
+
+
+// Simulando o unshift
+
+const nomes4 = ['Maria', 'Jõao', 'Eduardo', 'Gabriel', 'Júlia']
+
+nomes4.splice(0, 0, 'Luiz', 'Henrique', 'de', 'Jesus')
+
+console.log(nomes4)
