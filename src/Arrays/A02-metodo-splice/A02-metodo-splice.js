@@ -24,3 +24,13 @@ const nomes2 = ['Maria', 'Jõao', 'Eduardo', 'Gabriel', 'Júlia']
 const removidos2 = nomes2.splice(0, 1)
 
 console.log(removidos2)
+
+
+
+// Simulando o PUSH
+
+const nomes3 = ['Maria', 'Jõao', 'Eduardo', 'Gabriel', 'Júlia']
+
+nomes3.splice(nomes3.length, 0, 'Luiz')
+
+console.log(nomes3)
