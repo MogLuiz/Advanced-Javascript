@@ -32,3 +32,15 @@ const pessoas = [
     { nome: 'Rosana', idade: 32 },
     { nome: 'Wallace', idade: 47 },
 ]
+
+const pessoasComNomeGrande = pessoas.filter( obj => obj.nome.length > 4)
+
+const pessoaMaisVelha = pessoas.filter( obj => obj.idade > 50 )
+
+const pessoaUltimaLetraA = pessoas.filter( obj => {
+    return obj.nome.toLowerCase().endsWith('a')
+} )
+
+console.log(pessoasComNomeGrande)
+console.log(pessoaMaisVelha)
+console.log(pessoaUltimaLetraA)
