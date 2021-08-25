@@ -24,8 +24,17 @@ const pessoas = [
 const retornaStringComNome = pessoas.map( pessoa => pessoa.nome ) 
 console.log(retornaStringComNome)
 
+
 const removeChaveNome = pessoas.map( pessoa => {
     delete pessoa.nome
     return pessoa
 })
 console.log(removeChaveNome)
+
+
+const adicionaChaveId = pessoas.map((pessoa, indice) => {
+    pessoa.id = indice + 1
+    return pessoa
+})
+console.log("------------------")
+console.log(adicionaChaveId)
