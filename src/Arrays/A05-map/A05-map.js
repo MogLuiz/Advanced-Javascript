@@ -26,15 +26,19 @@ console.log(retornaStringComNome)
 
 
 const removeChaveNome = pessoas.map( pessoa => {
-    delete pessoa.nome
-    return pessoa
+    const newArrayPessoa = { ...pessoa }
+    delete newArrayPessoa.nome
+    return newArrayPessoa
 })
 console.log(removeChaveNome)
 
 
 const adicionaChaveId = pessoas.map((pessoa, indice) => {
-    pessoa.id = indice + 1
-    return pessoa
+    const newArrayComDados = { ...pessoa }
+    newArrayComDados.id = indice + 1
+    return newArrayComDados
 })
 console.log("------------------")
 console.log(adicionaChaveId)
+
+console.log(pessoas)
