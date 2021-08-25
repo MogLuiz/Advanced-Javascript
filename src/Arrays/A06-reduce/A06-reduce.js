@@ -18,3 +18,11 @@ const arrayPares = numeros.reduce(function(acumulador, valor, indice, array) {
 }, [])
 
 console.log(arrayPares)
+
+
+const arrayDobroValores = numeros.reduce(function(acumulador, valor, indice, array) {
+    acumulador.push(valor * 2)
+    return acumulador
+}, [])
+
+console.log(arrayDobroValores)
