@@ -10,3 +10,11 @@ const total = numeros.reduce(function(acumulador, valor, indice, array) {
 }, 0)
 
 console.log(total)
+
+
+const arrayPares = numeros.reduce(function(acumulador, valor, indice, array) {
+    if(valor % 2 === 0) acumulador.push(valor)
+    return acumulador
+}, [])
+
+console.log(arrayPares)
