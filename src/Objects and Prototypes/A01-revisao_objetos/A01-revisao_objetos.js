@@ -41,3 +41,11 @@ delete pessoa2.sobrenome
 
 console.log(pessoa2.falarNome())
 console.log(pessoa2.getDataNascimento())
+
+console.log('---------------------------')
+
+// Iterando por todas as chaves e valores de um objeto
+
+for (let chave in pessoa2) {
+    console.log(pessoa2[chave])
+}
